@@ -4,8 +4,8 @@ let Base = require('./Base');
 
 class BookViewer extends Base {
 
-    registerUser(user) {
-        return this.apiClient.post("register.json", user);
+    loadBooks() {
+        return this.apiClient.post('/loadBooks');
     }
 
 }

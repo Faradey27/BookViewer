@@ -16,6 +16,7 @@
     "bootstrap": "*",
     "fluxxor": "*",
     "font-awesome": "*",
+    "q": "*",
     "jquery": "*",
     "react": "0.13.*",
     "react-bootstrap": "0.13.*",

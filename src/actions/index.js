@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-    bookViewer: require('./bookViewer'),
+    bookViewer: require('./bookViewer')
 };

@@ -7,6 +7,6 @@ let apiClient = new ApiClient();
 let BookViewer = require('./BookViewer');
 
 module.exports = {
-    tripsuit: new BookViewer(),
+    bookViewer: new BookViewer({ apiClient: apiClient }),
     apiClient: apiClient
 };

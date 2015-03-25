@@ -5,7 +5,9 @@ let api = require('../api/');
 
 module.exports = {
 
-    hideErrors() {
-        this.dispatch(eventConstants.UI.NO_ERRORS);
-    },
+    loadBooks() {
+        return api.bookViewer.loadBooks().then((books) => {
+            this.dispatch(eventConstants.SERVER.BOOKS_LIST, books);
+        });
+    }
 };
