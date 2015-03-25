@@ -1,0 +1,41 @@
+{
+  "name": "BookViewer",
+  "version": "0.0.1",
+  "description": "Test task",
+  "author": {
+    "name": "Andrii Tiertyshnyi",
+    "email": "andrii.tiertyshnyi@gmail.com",
+    "url": "https://github.com/Faradey27"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack -d --watch --colors",
+    "devserver": "webpack-dev-server --debug --hot --devtool eval --output-pathinfo --watch --colors --inline --content-base www --port 8090"
+  },
+  "dependencies": {
+    "bootstrap": "*",
+    "fluxxor": "*",
+    "font-awesome": "*",
+    "jquery": "*",
+    "react": "0.13.*",
+    "react-bootstrap": "0.13.*",
+    "react-router": "*",
+    "uuid-v4": "*",
+    "webpack-dev-server": "*"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^1.1.0",
+    "css-loader": "^0.9.1",
+    "jshint-loader": "*",
+    "json-loader": "*",
+    "jsx-loader": "*",
+    "less-loader": "*",
+    "po-loader": "*",
+    "react-hot-loader": "*",
+    "style-loader": "*",
+    "traceur-loader": "*",
+    "url-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}
