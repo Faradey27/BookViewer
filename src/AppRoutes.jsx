@@ -17,7 +17,7 @@ let AppRoutes = (
         <Route name='book' path='/book/:bookName/:id' handler={BookPage} />
         <Route name='authors' path='/authors' handler={AuthorsPage} />
         <Route name='author' path='/author/:name/:id' handler={DetailsAuthorPage} />
-        <Route name='genre' path='/genre' handler={GenrePage} />
+        <Route name='genre' path='/genre/:genres' handler={GenrePage} />
 
         <DefaultRoute name='defaultMain' handler={BookListPage}/>
     </Route>

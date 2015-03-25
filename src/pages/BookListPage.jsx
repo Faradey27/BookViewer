@@ -3,7 +3,6 @@
 
 let React           = require('react');
 let FluxMixin       = require('fluxxor').FluxMixin(React);
-let Router          = require('react-router');
 let StoreWatchMixin = require('fluxxor').StoreWatchMixin;
 
 let BookController = require('./../components/BookController.jsx');
@@ -27,7 +26,7 @@ let BookListPage = React.createClass({
 
     getBookList() {
         return this.state.books && this.state.books.map((book) => {
-            return <BookController data={book} />
+            return <BookController data={book} />;
         });
     },
 

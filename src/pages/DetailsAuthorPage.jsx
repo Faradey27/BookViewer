@@ -29,7 +29,7 @@ let DetailsAuthorPage = React.createClass({
 
     getBooks() {
         return this.state.author && this.state.author.books.map((book) => {
-            return <BookController data={book} />
+            return <BookController data={book} />;
         });
     },
 

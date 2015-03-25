@@ -8,9 +8,6 @@ let Navbar  = require('react-bootstrap').Navbar;
 let Nav     = require('react-bootstrap').Nav;
 let NavItem = require('react-bootstrap').NavItem;
 
-
-let Book  = require('./Book.jsx');
-
 let NavBar = React.createClass({
     mixins: [Router.Navigation],
 

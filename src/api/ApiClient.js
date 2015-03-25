@@ -1,5 +1,5 @@
 'use strict';
-let Q = require('q');
+
 class ApiClient {
 
     post(url) {

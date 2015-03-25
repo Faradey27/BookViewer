@@ -14,27 +14,16 @@ let Author = React.createClass({
     mixins: [DropdownStateMixin],
 
     getBooks() {
+        if (!this.props.data.books) {
+            return null;
+        }
+
         return this.props.data.books.map((data, i) => {
             return <MenuItem eventKey={i}
                              onSelect={this.handleBookClick.bind(this, data)}>
                        {data.name}
                    </MenuItem>;
         });
-    },
-
-    getEmptyImage() {
-        return `data:image/svg+xml;base64,
-                PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN
-                0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3
-                cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTU2IiBoZWlnaHQ9I
-                jIwMCIgdmlld0JveD0iMCAwIDU1NiAyMDAiIHByZXNlcnZlQXNwZ
-                WN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTU2Ii
-                BoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9
-                IjIxMC41MzkwNjI1IiB5PSIxMDAiIHN0eWxlPSJmaWxsOiNBQUFBQU
-                E7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVs
-                dmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTt
-                mb250LXNpemU6MjZwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj
-                41NTZ4MjAwPC90ZXh0PjwvZz48L3N2Zz4=`;
     },
 
     handleBookClick(info) {
@@ -53,13 +42,16 @@ let Author = React.createClass({
         }
     },
 
-    showMenu(info) {
-        this.refs.dropdown.setDropdownState(true);
+    showMenu() {
+        if (this.props.mode !== "clickShow") {
+            this.refs.dropdown.setDropdownState(true);
+        } else {
+            this.handleAuthorClick();
+        }
     },
 
     render() {
         let name = this.props.data.name;
-        let emptyImage = this.getEmptyImage();
 
         return (
             <div className="Author" onClick={this.showMenu}>

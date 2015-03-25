@@ -17,7 +17,7 @@
                 "id": 1
             }],
             "short": "Winston Smith lives in Airstrip One, the ruins of an England ravaged by war, civil conflict, and revolution",
-            "genre": "smt",
+            "genre": "others",
             "id": 2
         },
         {
@@ -26,7 +26,7 @@
                 "name": "George Orwell",
                 "id": 2
             }],
-            "dystopia": "dystopia",
+            "genre": "dystopia",
             "short": "The story of Winston Smith begins on 4 April 1984: It was a bright cold day in April, and the clocks were striking thirteen yet he is uncertain of the true date, given the régime's continual rewriting and manipulation of history.[29] Smiths memories and his reading of the proscribed book",
             "id": 3
         },
@@ -39,7 +39,7 @@
                 "name": "Marina Dyachenko",
                 "id": 4
             }],
-            "dystopia": "fantastic",
+            "genre": "fantastic",
             "short": "The heroine of the novel has been forced into a seemingly inconceivable situation. Against her will, she must ent",
             "id": 4
         },
@@ -49,7 +49,7 @@
                 "name": "Thomas Campbell",
                 "id": 5
             }],
-            "dystopia": "smt",
+            "genre": "action",
             "short": "In the 1980s, T. Colin Campbell, PhD, co-directed a study of more than 4 dozen diseases and 367 items of socio-economic, lifestyle, nutrition, and genetic information ",
             "id": 6
         }

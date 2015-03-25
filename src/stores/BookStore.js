@@ -29,6 +29,36 @@ let ActivityStore = Fluxxor.createStore({
         });
     },
 
+    getBook(id) {
+        return this._books && this._books.books && this._books.books.find((book) => {
+            return book.id == id;
+        });
+    },
+
+    _getBooksByGenre(genre) {
+        if (this._books && this._books.books) {
+            let books = this._books.books;
+            return books.filter((data) => {
+                return data.genre == genre;
+            });
+        }
+
+        return [];
+    },
+
+    getBooksByGenres(genres) {
+        let books = genres && genres.length && genres.map((genre) => {
+            return this._getBooksByGenre(genre);
+        });
+        let result = [];
+        books.forEach((data) => {
+            data.forEach((data) => {
+                result.push(data);
+            });
+        });
+        return result;
+    },
+
     handleUpdateBookList(data) {
         this._books = data;
         this.emit('change');

@@ -21,6 +21,7 @@ let AuthorController = React.createClass({
         return (
             <div className="AuthorController">
                 <Author data={this.props.data}
+                        mode={this.props.mode}
                         handleBookClick={this.goToBookPage}
                         handleAuthorClick={this.goToAuthorPage}/>
             </div>

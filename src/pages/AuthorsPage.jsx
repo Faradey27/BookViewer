@@ -3,7 +3,6 @@
 
 let React           = require('react');
 let FluxMixin       = require('fluxxor').FluxMixin(React);
-let Router          = require('react-router');
 let StoreWatchMixin = require('fluxxor').StoreWatchMixin;
 
 let AuthorController = require('./../components/AuthorController.jsx');
@@ -27,7 +26,7 @@ let AuthorsPage = React.createClass({
 
     getAuthorsList() {
         return this.state.authors && this.state.authors.map((auhtor) => {
-            return <AuthorController data={auhtor} />
+            return <AuthorController data={auhtor} />;
         });
     },
 
