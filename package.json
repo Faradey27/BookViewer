@@ -10,7 +10,7 @@
   "scripts": {
     "build": "webpack -p",
     "start": "webpack -d --watch --colors",
-    "devserver": "webpack-dev-server --debug --hot --devtool eval --output-pathinfo --watch --colors --inline --content-base www --port 8090"
+    "devserver": "webpack-dev-server --debug --hot --devtool eval --output-pathinfo --watch --colors --inline --content-base public --port 8090"
   },
   "dependencies": {
     "bootstrap": "*",

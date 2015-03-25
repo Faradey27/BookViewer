@@ -1,13 +1,12 @@
 'use strict';
 
-let config = require('./../etc/config.json');
 
 let ApiClient = require('./ApiClient');
-let apiClient = new ApiClient({ prefix: config.apiPrefix });
+let apiClient = new ApiClient();
 
-let TripSuit = require('./TripSuit');
+let BookViewer = require('./BookViewer');
 
 module.exports = {
-    tripsuit: new TripSuit({ apiClient: apiClient }),
+    tripsuit: new BookViewer(),
     apiClient: apiClient
 };

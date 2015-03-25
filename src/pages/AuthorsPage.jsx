@@ -7,7 +7,7 @@ let Router          = require('react-router');
 let StoreWatchMixin = require('fluxxor').StoreWatchMixin;
 let cx              = React.addons.classSet;
 
-require("./AuthorsPage.scss");
+require("./AuthorsPage.less");
 
 let AuthorsPage = React.createClass({
 

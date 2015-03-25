@@ -7,7 +7,7 @@ let Router          = require('react-router');
 let StoreWatchMixin = require('fluxxor').StoreWatchMixin;
 let cx              = React.addons.classSet;
 
-require("./BookListPage.scss");
+require("./BookListPage.less");
 
 let BookListPage = React.createClass({
 

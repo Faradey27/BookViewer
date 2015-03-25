@@ -1,0 +1,49 @@
+{
+    "books": [
+        {
+            "name": "Brave new world",
+            "author": {
+                "name": "Aldous Huxley",
+                "id": 1
+            },
+            "short": "Winston works at the Ministry of Truth, or Minitrue, as an editor responsible for historical rev",
+            "genre": "dystopia",
+            "id": 1
+        },
+        {
+            "name": "The Doors of Perception",
+            "author": {
+                "name": "Aldous Huxley",
+                "id": 1
+            },
+            "short": "Winston Smith lives in Airstrip One, the ruins of an England ravaged by war, civil conflict, and revolution",
+            "genre": "smt",
+            "id": 2
+        },
+        {
+            "name": "1984",
+            "author": {
+                "name": "George Orwell",
+                "id": 3
+            },
+            "dystopia": "dystopia",
+            "short": "The story of Winston Smith begins on 4 April 1984: It was a bright cold day in April, and the clocks were striking thirteen yet he is uncertain of the true date, given the régime's continual rewriting and manipulation of history.[29] Smiths memories and his reading of the proscribed book",
+            "id": 3
+        }
+    ],
+    "authors": [
+        {
+            "name": "Aldous Huxley",
+            "biography": "Nineteen Eighty-Four, sometimes published as 1984, is a dystopian novel by English author George Orwell published in 1949.[1][2] The novel is set in Airstrip One (formerly known as Great Britain), a province of the superstate Oceania in a world of perpetual war, omnipresent government surveillance and public manipulation",
+            "id": 1,
+            "books": [{"name": "Brave new world", "id": "1"},
+                      {"name": "The Doors of Perception", "id": "2"}],
+        },
+        {
+            "name": "George Orwell",
+            "biography": "Nineteen Eighty-Four, sometimes published as 1984, is a dystopian novel by English author George Orwell published in 1949.[1][2] The novel is set in Airstrip One (formerly known as Great Britain), a province of the superstate Oceania in a world of perpetual war, omnipresent government surveillance and public manipulation",
+            "books": [{"name": "1984", "id": "3"}],
+            "id": 2
+        }
+    ]
+}

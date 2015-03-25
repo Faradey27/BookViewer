@@ -18,7 +18,7 @@ let AppRoutes = (
         <Route name='author' path='/author/:name/:id' handler={DetailsAuthorPage} />
         <Route name='genre' path='/genre' handler={GenrePage} />
 
-        <DefaultRoute name='defaultMain' handler={LoginPage}/>
+        <DefaultRoute name='defaultMain' handler={BookListPage}/>
     </Route>
 );
 
